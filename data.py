@@ -1,3 +1,5 @@
+# Diccionario de preguntas categorizadas por problemas del vehículo
+
 preguntas = {
   "No enciende": [
     "1. ¿El vehículo ha pasado por mantenimiento en los últimos 6 meses?",
@@ -50,10 +52,11 @@ preguntas = {
   ]
 }
 
+# Función para obtener las preguntas asociadas a un problema específico
 def obtener_preguntas(variable_seleccionada):
   return preguntas.get(variable_seleccionada, [])
 
-
+# Lista de diagnósticos con preguntas y posibles causas
 diagnosticos = [
   {"preguntas": ["1. ¿El vehículo ha pasado por mantenimiento en los últimos 6 meses?",
                   "2. ¿Se le ha presentado este problema en los últimos 6 meses?",
@@ -124,5 +127,6 @@ diagnosticos = [
     "causa": "Problemas con la inyección de combustible."}
 ]
 
+# Función para obtener la lista de diagnósticos
 def obtener_diagnosticos():
   return diagnosticos
